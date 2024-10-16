@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "test",
+			"command": "cmake",
+			"args": [
+				"--build",
+                "${workspaceFolder}/build"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"  // 使用项目的根目录
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/g++-11"
+		}
+	]
+}
